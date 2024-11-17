@@ -7,11 +7,6 @@ export interface ThemeFont {
   size: Record<FontSize, number>;
 }
 
-export interface ThemeColor {
-  dark: string;
-  light: string;
-}
-
 export enum ColorVariant {
   PRIMARY = "primary",
   SECONDARY = "secondary",

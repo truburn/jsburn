@@ -5,7 +5,7 @@ import {
 } from "@components/typography/types";
 import fontData from "@constants/fonts.json";
 import type { Theme } from "@emotion/react";
-import { ColorVariant, ThemeColor, ThemeFont } from "@styles/types";
+import { ThemeFont } from "@styles/types";
 import colorData from "@constants/colors.json";
 
 const fonts: FontDefinition = fontData;
@@ -59,37 +59,17 @@ const themeFont: Theme["font"] = {
   },
 };
 
-const colors: Record<ColorVariant, ThemeColor> = colorData;
-
-function getThemeColors(themeName: "light" | "dark"): Theme["color"] {
-  return Object.fromEntries(
-    Object.values(ColorVariant).map((key) => [key, colors[key][themeName]])
-  ) as Theme["color"];
-}
-
-const lightColors = getThemeColors("light");
-const darkColors = getThemeColors("dark");
-
 const themeBorder: Omit<Theme["border"], "color"> = {
   width: 1,
   radius: 4,
   style: "solid",
 };
 
-export const light: Theme = {
+export const theme: Theme = {
   font: themeFont,
-  color: lightColors,
+  color: colorData,
   border: {
     ...themeBorder,
-    color: lightColors.muted,
-  },
-};
-
-export const dark: Theme = {
-  font: themeFont,
-  color: darkColors,
-  border: {
-    ...themeBorder,
-    color: darkColors.muted,
+    color: colorData.muted,
   },
 };

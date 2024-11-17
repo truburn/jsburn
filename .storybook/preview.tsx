@@ -2,7 +2,7 @@ import type { Preview } from "@storybook/react";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import GlobalStyles from "../src/styles/GlobalStyles";
 import { ThemeProvider } from "@emotion/react";
-import { light, dark } from "../src/styles/theme";
+import { theme } from "../src/styles/theme";
 import { allModes } from "./modes";
 import { Title, Subtitle, Description, ArgTypes } from "@storybook/blocks";
 import React from "react";
@@ -15,8 +15,8 @@ const preview: Preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/i,
-      },
+        date: /Date$/i
+      }
     },
     chromatic: {
       modes: {
@@ -24,8 +24,8 @@ const preview: Preview = {
         dark: allModes.dark,
         mobile1: allModes.mobile1,
         mobile2: allModes.mobile2,
-        tablet: allModes.tablet,
-      },
+        tablet: allModes.tablet
+      }
     },
     docs: {
       page: () => (
@@ -36,7 +36,7 @@ const preview: Preview = {
           <h2>Props</h2>
           <ArgTypes />
         </>
-      ),
+      )
     },
     options: {
       storySort: {
@@ -47,22 +47,22 @@ const preview: Preview = {
           "layout",
           "navigation",
           "typography",
-          "Theme",
-        ],
-      },
+          "Theme"
+        ]
+      }
     },
     viewport: {
-      viewports: INITIAL_VIEWPORTS,
-    },
+      viewports: INITIAL_VIEWPORTS
+    }
   },
   decorators: [
     withThemeFromJSXProvider({
-      themes: { light, dark },
-      defaultTheme: "light",
+      themes: { theme },
+      defaultTheme: "theme",
       Provider: ThemeProvider,
-      GlobalStyles,
-    }),
-  ],
+      GlobalStyles
+    })
+  ]
 };
 
 export default preview;
