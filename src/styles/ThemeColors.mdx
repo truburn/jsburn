@@ -1,0 +1,80 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import { dark, light } from "./theme";
+
+<Meta title="Theme/Color Schemes" />
+
+# Light Color Scheme
+
+**Colors to use on a light background**
+
+All of the following colors are part of the theme within the `theme.color` property. For example, `theme.color.primary` to use the primary color. The colors are defined in the `@constants/color.json` file as the `light` attribute for each color variant.
+
+<ColorPalette>
+  <ColorItem
+    title="Base Colors"
+    subtitle="Colors for common elements"
+    colors={{
+      bg: light.color.bg,
+      fg: light.color.fg,
+      muted: light.color.muted,
+    }}
+  />
+  <ColorItem
+    title="Brand Colors"
+    subtitle="Colors used when something should stand out."
+    colors={{
+      primary: light.color.primary,
+      secondary: light.color.secondary,
+      tertiary: light.color.tertiary,
+      accent: light.color.accent,
+    }}
+  />
+  <ColorItem
+    title="Status Colors"
+    subtitle="Colors that indicate a status state."
+    colors={{
+      info: light.color.info,
+      success: light.color.success,
+      warning: light.color.warning,
+      error: light.color.error,
+    }}
+  />
+</ColorPalette>
+
+# Dark Color Scheme
+
+**Colors to use on a dark background.**
+
+All of the following colors are part of the theme within the `theme.color` property. For example, `theme.color.primary` to use the primary color. The colors are defined in the `@constants/color.json` file as the `dark` attribute for each color variant.
+
+<ColorPalette>
+  <ColorItem
+    title="Base Colors"
+    subtitle="Colors for common elements"
+    colors={{
+      bg: dark.color.bg,
+      fg: dark.color.fg,
+      muted: dark.color.muted,
+    }}
+  />
+  <ColorItem
+    title="Brand Colors"
+    subtitle="Colors used when something should stand out."
+    colors={{
+      primary: dark.color.primary,
+      secondary: dark.color.secondary,
+      tertiary: dark.color.tertiary,
+      accent: dark.color.accent,
+    }}
+  />
+  <ColorItem
+    title="Status Colors"
+    subtitle="Colors that indicate a status state."
+    colors={{
+      info: dark.color.info,
+      success: dark.color.success,
+      warning: dark.color.warning,
+      error: dark.color.error,
+    }}
+  />
+</ColorPalette>
