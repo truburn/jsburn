@@ -1,10 +1,12 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
 
 export function useAppClasses() {
-  const theme = useTheme();
+  const content = css({
+    flex: 1,
+    display: "flex",
+    flexDirection: "column",
+    alignContent: "stretch",
+  });
 
-  const root = css({});
-
-  return { root };
+  return { content };
 }

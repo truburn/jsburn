@@ -10,18 +10,17 @@ export default function GlobalStyles() {
           padding: 0,
           width: "100vw",
           height: "100vh",
-          overflow: "hidden",
           fontFamily: theme.font.standard.family,
           fontSize: theme.font.standard.size.regular,
           background: theme.color.bg,
-          color: theme.color.fg,
+          color: theme.color.fg
         },
         "#app-root": {
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        },
+          alignItems: "stretch",
+          justifyContent: "space-between"
+        }
       })}
     />
   );
