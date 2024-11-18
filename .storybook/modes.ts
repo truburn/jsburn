@@ -1,10 +1,4 @@
 export const allModes = {
-  light: {
-    theme: "light",
-  },
-  dark: {
-    theme: "dark",
-  },
   mobile1: {
     viewport: "mobile1",
   },

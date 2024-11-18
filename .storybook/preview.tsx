@@ -20,8 +20,6 @@ const preview: Preview = {
     },
     chromatic: {
       modes: {
-        light: allModes.light,
-        dark: allModes.dark,
         mobile1: allModes.mobile1,
         mobile2: allModes.mobile2,
         tablet: allModes.tablet
