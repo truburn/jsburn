@@ -60,8 +60,7 @@ const preview: Preview = {
       defaultTheme: "theme",
       Provider: ThemeProvider,
       GlobalStyles
-    }),
-    withRouter
+    })
   ]
 };
 
