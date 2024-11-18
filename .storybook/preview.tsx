@@ -1,13 +1,14 @@
-import type { Preview } from "@storybook/react";
-import { withThemeFromJSXProvider } from "@storybook/addon-themes";
-import GlobalStyles from "../src/styles/GlobalStyles";
 import { ThemeProvider } from "@emotion/react";
-import { theme } from "../src/styles/theme";
-import { allModes } from "./modes";
-import { Title, Subtitle, Description, ArgTypes } from "@storybook/blocks";
-import React from "react";
+import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
+import { ArgTypes, Description, Title } from "@storybook/blocks";
+import type { Preview } from "@storybook/react";
+import React from "react";
+import { withRouter } from "storybook-addon-remix-react-router";
+import GlobalStyles from "../src/styles/GlobalStyles";
+import { theme } from "../src/styles/theme";
 import { ImportStatement } from "./blocks/ImportStatement";
+import { allModes } from "./modes";
 
 const preview: Preview = {
   tags: ["autodocs"],
@@ -59,7 +60,8 @@ const preview: Preview = {
       defaultTheme: "theme",
       Provider: ThemeProvider,
       GlobalStyles
-    })
+    }),
+    withRouter
   ]
 };
 

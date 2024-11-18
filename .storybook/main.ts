@@ -16,6 +16,7 @@ const config: StorybookConfig = {
     "@storybook/experimental-addon-test",
     "@storybook/addon-coverage",
     "@storybook/addon-themes",
+    "storybook-addon-remix-react-router",
   ],
   framework: {
     name: "@storybook/react-vite",
