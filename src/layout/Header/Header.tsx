@@ -1,6 +1,7 @@
 import { useHeaderClasses } from "@layout/Header";
 import LogoImage from "@assets/logo/logo.svg?react";
 import { Link } from "@navigation/Link";
+import { Social } from "@navigation/Social";
 
 /**
  * Header
@@ -22,29 +23,7 @@ export function Header() {
         </div>
       </Link>
       <div className={classes.headerRight}>
-        <div className={classes.social}>
-          <Link
-            className={classes.socialIcon}
-            to="https://www.linkedin.com/in/jenniferseburn"
-            title="View my LinkedIn profile"
-          >
-            LinkedIn
-          </Link>
-          <Link
-            className={classes.socialIcon}
-            to="https://github.com/truburn"
-            title="View my GitHub"
-          >
-            GitHub
-          </Link>
-          <Link
-            className={classes.socialIcon}
-            to="https://codepen.io/truburn"
-            title="View my Codepen"
-          >
-            Codepen
-          </Link>
-        </div>
+        <Social />
         <Link asButton className={classes.contactButton} to="/contact">
           Let's Build Something Together
         </Link>

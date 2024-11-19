@@ -1,0 +1,22 @@
+[
+  {
+    "to": "/about",
+    "label": "About"
+  },
+  {
+    "to": "/skills",
+    "label": "Skills"
+  },
+  {
+    "to": "/certifications",
+    "label": "Certifications"
+  },
+  {
+    "to": "/experience",
+    "label": "Experience"
+  },
+  {
+    "to": "/projects",
+    "label": "Projects"
+  }
+]

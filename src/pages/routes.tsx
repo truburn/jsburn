@@ -9,6 +9,7 @@ import { Home } from "@pages/Home";
 import { PageNotFound } from "@pages/PageNotFound";
 import { Projects } from "@pages/Projects";
 import { Skills } from "@pages/Skills";
+import { PrivacyPolicy, TermsOfUse } from "@pages/Legal";
 
 export default createBrowserRouter([
   {
@@ -43,6 +44,14 @@ export default createBrowserRouter([
       {
         path: "/skills",
         element: <Skills />
+      },
+      {
+        path: "/terms-of-use",
+        element: <TermsOfUse />
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />
       },
       {
         path: "*",

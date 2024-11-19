@@ -57,22 +57,14 @@ export function useHeaderClasses() {
 
   const tagLine = css({
     fontFamily: theme.font.header.family,
-    fontSize: theme.font.header.size.medium,
+    fontSize: theme.font.header.size.regular,
     color: theme.color.fg,
     whiteSpace: "nowrap",
   });
 
-  const social = css({
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "stretch",
-    justifyContent: "flex-end",
-    gap: 8,
-  });
+  const social = css({});
 
-  const socialIcon = css({
-    color: theme.color.secondary,
-  });
+  const socialIcon = css({});
 
   const contactButton = css({});
 
