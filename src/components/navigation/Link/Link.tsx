@@ -6,6 +6,8 @@ interface LinkProps {
   to: string;
   className?: string;
   isActive?: boolean;
+  title?: string;
+  asButton?: boolean;
 }
 
 /**
@@ -18,6 +20,7 @@ export function Link(props: PropsWithChildren<LinkProps>) {
     <a
       className={cx(classes.root, props.className, { active: props.isActive })}
       href={props.to}
+      title={props.title}
     >
       {props.children}
     </a>
