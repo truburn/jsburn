@@ -4,7 +4,7 @@ import { useTheme } from "@emotion/react";
 export function useSkillsClasses() {
   const theme = useTheme();
 
-  const root = css({});
+  const root = css({ background: theme.color.muted });
 
   return { root };
 }
