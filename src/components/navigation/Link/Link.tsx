@@ -8,6 +8,7 @@ interface LinkProps {
   isActive?: boolean;
   title?: string;
   asButton?: boolean;
+  newTab?: boolean;
 }
 
 /**
@@ -21,6 +22,7 @@ export function Link(props: PropsWithChildren<LinkProps>) {
       className={cx(classes.root, props.className, { active: props.isActive })}
       href={props.to}
       title={props.title}
+      target={props.newTab ? "_blank" : "_self"}
     >
       {props.children}
     </a>
