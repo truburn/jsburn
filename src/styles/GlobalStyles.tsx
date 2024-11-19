@@ -1,4 +1,5 @@
 import { Global, css, useTheme } from "@emotion/react";
+import { marginMixin } from "@styles/mixins";
 
 export default function GlobalStyles() {
   const theme = useTheme();
@@ -20,6 +21,9 @@ export default function GlobalStyles() {
           flexDirection: "column",
           alignItems: "stretch",
           justifyContent: "space-between"
+        },
+        p: {
+          ...marginMixin({ bottom: 16 })
         }
       })}
     />

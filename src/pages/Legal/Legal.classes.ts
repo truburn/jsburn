@@ -1,10 +1,19 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { marginMixin, paddingMixin } from "@styles/mixins";
 
 export function useLegalClasses() {
-  const theme = useTheme();
+  const list = css({
+    ...marginMixin(),
+    ...paddingMixin({ left: "2ch" }),
+  });
 
-  const root = css({});
+  const listItem = css({
+    ...marginMixin(),
+  });
 
-  return { root };
+  const title = css({
+    ...marginMixin({ top: 8, bottom: 4 }),
+  });
+
+  return { list, listItem, title };
 }
