@@ -14,21 +14,21 @@ export function Social() {
         to="https://www.linkedin.com/in/jenniferseburn"
         title="View my LinkedIn profile"
       >
-        LinkedIn
+        <i className="fa-brands fa-linkedin-in"></i>
       </Link>
       <Link
         className={classes.link}
         to="https://github.com/truburn"
         title="View my GitHub"
       >
-        GitHub
+        <i className="fa-brands fa-github"></i>
       </Link>
       <Link
         className={classes.link}
         to="https://codepen.io/truburn"
         title="View my Codepen"
       >
-        Codepen
+        <i className="fa-brands fa-codepen"></i>
       </Link>
     </div>
   );

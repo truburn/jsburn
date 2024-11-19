@@ -23,8 +23,9 @@ export function useFooterClasses() {
       gap: 8,
       ...marginMixin(),
       "&:first-of-type": {
+        flexDirection: "row",
         justifyContent: "flex-start",
-        gap: 16,
+        gap: 4,
       },
       "&:last-of-type": {
         flexDirection: "row",

@@ -12,8 +12,11 @@ export function Footer() {
 
   return (
     <footer className={classes.root}>
-      <div>Copyright 2024 Jenny Seburn</div>
       <div>
+        <i className="fa-regular fa-copyright"></i> Copyright 2024 Jenny Seburn
+      </div>
+      <div>
+        <Social />
         <div className={classes.nav}>
           {navList.map((navItem: NavItem, idx) => (
             <Link className={classes.link} key={idx} to={navItem.to}>
@@ -21,7 +24,6 @@ export function Footer() {
             </Link>
           ))}
         </div>
-        <Social />
       </div>
       <div>
         <Link className={classes.link} to="/terms-of-use">
