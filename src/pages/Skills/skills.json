@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Frontend Development",
+    "list": ["React", "JavaScript", "TypeScript", "CSS", "Styled Components"]
+  },
+  {
+    "title": "Component Design",
+    "list": ["Storybook", "reusable design systems"]
+  },
+  {
+    "title": "Testing & QA",
+    "list": ["Jest", "Vitest", "debugging", "performance optimization"]
+  },
+  {
+    "title": "UI/UX Design",
+    "list": ["Wireframing", "prototyping", "user-first workflows"]
+  },
+  {
+    "title": "Accessibility & Usability",
+    "list": ["WCAG compliance", "responsive design principles"]
+  },
+  {
+    "title": "Design Tools",
+    "list": ["Adobe Creative Suite", "Figma", "design handoff best practices"]
+  },
+  {
+    "title": "Agile Methodologies",
+    "list": [
+      "Scrum",
+      "Kanban",
+      "Sprint Planning",
+      "Certified Scrum Master & Product Owner"
+    ]
+  },
+  {
+    "title": "Collaboration & Leadership",
+    "list": [
+      "Cross-functional team collaboration",
+      "mentoring",
+      "Agile ceremonies"
+    ]
+  },
+  {
+    "title": "Code Quality Assurance",
+    "list": [
+      "Peer code reviews",
+      "adherence to coding standards",
+      "issue resolution"
+    ]
+  },
+  {
+    "title": "CRM and Enterprise Platforms",
+    "list": ["Currently purusing Salesforce Platform Developer I Certification"]
+  }
+]

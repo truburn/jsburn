@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Frontend Libraries & Framework",
+    "list": ["React", "Styled Components", "Storybook"]
+  },
+  {
+    "title": "Testing Tools",
+    "list": ["Jest", "Vitest", "React Testing Library"]
+  },
+  {
+    "title": "Build & Deployment",
+    "list": ["Webpack", "Vite", "GitHub Actions"]
+  },
+  {
+    "title": "Design Tools",
+    "list": ["Adobe Creative Suite (Photoshop, Illustrator)", "Figma"]
+  },
+  {
+    "title": "Collaboration Platforms",
+    "list": ["Jira", "Slack", "Microsoft Teams"]
+  },
+  {
+    "title": "Version Control & CI/CD",
+    "list": ["Git", "GitHub", "GitLab", "Pull Requests"]
+  },
+  {
+    "title": "CRM Platforms",
+    "list": ["Salesforce (Platform Developer I Certification in progress"]
+  }
+]
