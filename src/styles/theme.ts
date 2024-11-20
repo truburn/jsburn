@@ -70,6 +70,6 @@ export const theme: Theme = {
   color: colorData,
   border: {
     ...themeBorder,
-    color: colorData.muted,
+    color: "#ADADAD",
   },
 };
