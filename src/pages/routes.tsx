@@ -4,7 +4,6 @@ import { About } from "@pages/About";
 import { Certifications } from "@pages/Certifications";
 import { Contact } from "@pages/Contact";
 import { ErrorPage } from "@pages/ErrorPage";
-import { Experience } from "@pages/Experience";
 import { Home } from "@pages/Home";
 import { PageNotFound } from "@pages/PageNotFound";
 import { Projects } from "@pages/Projects";
@@ -32,10 +31,6 @@ export default createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
-      },
-      {
-        path: "/experience",
-        element: <Experience />
       },
       {
         path: "/projects",
