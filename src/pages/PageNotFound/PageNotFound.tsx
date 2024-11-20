@@ -17,10 +17,10 @@ export function PageNotFound() {
           Oh no! It seems this page has vanished into the ether.
         </p>
         <i
-          className={cx("fa-duotone fa-solid fa-book-open-cover", classes.icon)}
+          className={cx("fa-duotone fa-regular fa-book-sparkles", classes.icon)}
         ></i>
         <p className={classes.text}>
-          Perhaps a spell went awry, or the page you’re seeking has been
+          Perhaps a spell went awry, or the page you're seeking has been
           spirited away. Fear not!
           <br />
           <Link to="/">You can return to the heart of the realm.</Link>

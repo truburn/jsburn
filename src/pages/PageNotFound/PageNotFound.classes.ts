@@ -22,8 +22,7 @@ export function usePageNotFoundClasses() {
 
   const icon = css({
     color: theme.color.primary,
-    width: 300,
-    height: "auto",
+    height: 200,
     ...marginMixin({ vertical: 32 }),
   });
 
