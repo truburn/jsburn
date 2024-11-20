@@ -1,4 +1,4 @@
-import { useButtonClasses } from "@navigation/Button";
+import { useButtonClasses } from "@form/Button";
 
 /**
  * Button
