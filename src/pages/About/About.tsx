@@ -29,8 +29,8 @@ export function About() {
           </p>
           <p>
             Over the years, I’ve expanded my expertise into front-end
-            development, mastering technologies like React, JavaScript,
-            TypeScript, and more. Currently, I’m diving into the Salesforce
+            development, mastering technologies like React, Javascript,
+            Typescript, and more. Currently, I’m diving into the Salesforce
             ecosystem, advancing my skills through hands-on projects and
             Trailhead modules as I work toward earning my Salesforce Platform
             Developer I certification.
