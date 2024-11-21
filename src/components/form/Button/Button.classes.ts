@@ -16,6 +16,7 @@ export function useButtonClasses() {
     fontSize: theme.font.standard.size.regular,
     cursor: "pointer",
     transition: "ease all 0.5s",
+    textDecoration: "none",
     "&.filled": {
       background: theme.color.secondary,
       color: theme.color.bg,
@@ -32,6 +33,11 @@ export function useButtonClasses() {
       "&:hover": {
         background: theme.color.muted,
       },
+    },
+    "&.disabled, &:disabled": {
+      opacity: 0.25,
+      cursor: "not-allowed",
+      pointerEvents: "none",
     },
   });
 

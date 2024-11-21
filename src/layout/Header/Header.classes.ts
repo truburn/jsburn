@@ -66,7 +66,10 @@ export function useHeaderClasses() {
 
   const socialIcon = css({});
 
-  const contactButton = css({});
+  const contactButton = css({
+    ...paddingMixin({ vertical: 2, horizontal: 8 }),
+    ...marginMixin({ top: 8 }),
+  });
 
   return {
     root,

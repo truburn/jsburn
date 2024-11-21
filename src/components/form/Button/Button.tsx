@@ -11,6 +11,10 @@ interface ButtonProps {
   ariaLabel?: string;
   submit?: boolean;
   variant?: "filled" | "outlined";
+  asLink?: {
+    to: string;
+    newTab?: boolean;
+  };
 }
 
 /**
@@ -23,6 +27,21 @@ export function Button(props: PropsWithChildren<ButtonProps>) {
   });
   const { id = generatedID, variant = "filled" } = props;
   const classes = useButtonClasses();
+
+  if (props.asLink) {
+    return (
+      <a
+        href={props.asLink.to}
+        target={props.asLink.newTab ? "_blank" : "_self"}
+        id={id}
+        className={cx(classes.root, props.className, variant, {
+          disabled: props.disabled
+        })}
+      >
+        {props.children}
+      </a>
+    );
+  }
 
   return (
     <button

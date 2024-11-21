@@ -2,6 +2,7 @@ import { useHeaderClasses } from "@layout/Header";
 import LogoImage from "@assets/logo/logo.svg?react";
 import { Link } from "@navigation/Link";
 import { Social } from "@navigation/Social";
+import { Button } from "@form/Button";
 
 /**
  * Header
@@ -24,9 +25,9 @@ export function Header() {
       </Link>
       <div className={classes.headerRight}>
         <Social />
-        <Link asButton className={classes.contactButton} to="/contact">
+        <Button className={classes.contactButton} asLink={{ to: "/contact" }}>
           Let's Build Something Together
-        </Link>
+        </Button>
       </div>
     </header>
   );

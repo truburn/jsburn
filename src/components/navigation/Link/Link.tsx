@@ -1,4 +1,5 @@
 import { cx } from "@emotion/css";
+import { useButtonClasses } from "@form/Button";
 import { useLinkClasses } from "@navigation/Link";
 import { PropsWithChildren } from "react";
 
@@ -7,7 +8,6 @@ interface LinkProps {
   className?: string;
   isActive?: boolean;
   title?: string;
-  asButton?: boolean;
   newTab?: boolean;
 }
 
@@ -19,7 +19,9 @@ export function Link(props: PropsWithChildren<LinkProps>) {
 
   return (
     <a
-      className={cx(classes.root, props.className, { active: props.isActive })}
+      className={cx(classes.root, props.className, {
+        active: props.isActive
+      })}
       href={props.to}
       title={props.title}
       target={props.newTab ? "_blank" : "_self"}
