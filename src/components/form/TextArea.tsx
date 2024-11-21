@@ -7,7 +7,7 @@ import { ChangeEventHandler } from "react";
 interface TextInputProps {
   label: string;
   value?: string;
-  onChange?: (newValue?: string) => void;
+  onChange?: (field: string, newValue?: string) => void;
   error?: string;
   disabled?: boolean;
   id?: string;
@@ -17,6 +17,7 @@ interface TextInputProps {
   helperText?: string;
   name?: string;
   required?: boolean;
+  placeholder?: string;
 }
 
 /**
@@ -31,7 +32,7 @@ export function TextArea(props: TextInputProps) {
     const {
       target: { value }
     } = evt;
-    props.onChange?.(value);
+    props.onChange?.(name, value);
   };
 
   return (
@@ -52,6 +53,7 @@ export function TextArea(props: TextInputProps) {
         className={cx(classes.input, classes.textarea, props.inputClass)}
         name={name}
         onChange={handleChange}
+        placeholder={props.placeholder}
       >
         {props.value}
       </textarea>

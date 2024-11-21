@@ -7,7 +7,7 @@ import { ChangeEventHandler } from "react";
 interface TextInputProps {
   label: string;
   value?: string;
-  onChange?: (newValue?: string) => void;
+  onChange?: (field: string, newValue?: string) => void;
   error?: string;
   disabled?: boolean;
   type?: "text" | "email";
@@ -18,6 +18,7 @@ interface TextInputProps {
   helperText?: string;
   name?: string;
   required?: boolean;
+  placeholder?: string;
 }
 
 /**
@@ -36,7 +37,7 @@ export function TextInput(props: TextInputProps) {
     const {
       target: { value }
     } = evt;
-    props.onChange?.(value);
+    props.onChange?.(name, value);
   };
 
   return (
@@ -58,6 +59,7 @@ export function TextInput(props: TextInputProps) {
         name={name}
         onChange={handleChange}
         required={props.required}
+        placeholder={props.placeholder}
       />
     </div>
   );
