@@ -69,6 +69,7 @@ export function Contact() {
           try {
             await sendEmail(formValues);
             setEmailStatus("success");
+            setFormValues(DEFAULT_FORM_VALUES);
           } catch (err) {
             setEmailStatus("error");
           }
