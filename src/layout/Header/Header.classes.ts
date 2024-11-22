@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useHeaderClasses() {
   const theme = useTheme();
@@ -15,6 +15,11 @@ export function useHeaderClasses() {
       ...marginMixin(),
       lineHeight: 1,
     },
+    ...mobileStyles({
+      flexDirection: "column",
+      gap: 8,
+      ...marginMixin({ bottom: 8 }),
+    }),
   });
 
   const headerLeft = css({
@@ -29,10 +34,18 @@ export function useHeaderClasses() {
     flexDirection: "column",
     alignItems: "flex-end",
     justifyContent: "space-between",
+    ...mobileStyles({
+      flexDirection: "column-reverse",
+      alignItems: "center",
+      gap: 6,
+    }),
   });
 
   const logo = css({
     height: "100%",
+    ...mobileStyles({
+      height: 70,
+    }),
   });
 
   const headerText = css({
@@ -60,6 +73,10 @@ export function useHeaderClasses() {
     fontSize: theme.font.header.size.regular,
     color: theme.color.fg,
     whiteSpace: "nowrap",
+    ...mobileStyles({
+      whiteSpace: "wrap",
+      fontSize: theme.font.header.size.medium,
+    }),
   });
 
   const social = css({});
@@ -69,6 +86,9 @@ export function useHeaderClasses() {
   const contactButton = css({
     ...paddingMixin({ vertical: 2, horizontal: 8 }),
     ...marginMixin({ top: 8 }),
+    ...mobileStyles({
+      textAlign: "center",
+    }),
   });
 
   return {

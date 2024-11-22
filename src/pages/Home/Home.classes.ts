@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useHomeClasses() {
   const theme = useTheme();
@@ -12,6 +12,9 @@ export function useHomeClasses() {
     alignItems: "stretch",
     justifyContent: "center",
     gap: 16,
+    ...mobileStyles({
+      flexDirection: "column",
+    }),
   });
 
   const logo = css({
@@ -20,6 +23,10 @@ export function useHomeClasses() {
     justifyContent: "center",
     "& svg": {
       height: "calc(100vh - 400px)",
+      ...mobileStyles({
+        height: "auto",
+        width: 300,
+      }),
     },
   });
 

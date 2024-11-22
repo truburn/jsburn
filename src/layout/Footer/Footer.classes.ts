@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useFooterClasses() {
   const theme = useTheme();
@@ -26,13 +26,28 @@ export function useFooterClasses() {
         flexDirection: "row",
         justifyContent: "flex-start",
         gap: 4,
+        ...mobileStyles({
+          alignItems: "center",
+        }),
       },
       "&:last-of-type": {
         flexDirection: "row",
         justifyContent: "flex-end",
         gap: 16,
+        ...mobileStyles({
+          flexDirection: "column",
+          alignItems: "flex-start",
+        }),
       },
+      ...mobileStyles({
+        flexDirection: "column",
+        alignItems: "flex-start",
+      }),
     },
+    ...mobileStyles({
+      flexDirection: "column",
+      alignItems: "flex-start",
+    }),
   });
 
   const nav = css({
@@ -41,6 +56,10 @@ export function useFooterClasses() {
     alignItems: "center",
     justifyContent: "center",
     gap: 16,
+    ...mobileStyles({
+      flexDirection: "column",
+      alignItems: "flex-start",
+    }),
   });
 
   const link = css({

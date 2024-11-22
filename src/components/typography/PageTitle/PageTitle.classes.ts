@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles } from "@styles/mixins";
 
 export function usePageTitleClasses() {
   const theme = useTheme();
@@ -17,6 +17,9 @@ export function usePageTitleClasses() {
       fontSize: theme.font.standard.size.large,
       fontWeight: theme.font.standard.weight.light,
     },
+    ...mobileStyles({
+      fontSize: theme.font.header.size.xlarge - 2,
+    }),
   });
 
   return { root };

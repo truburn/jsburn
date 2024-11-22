@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles } from "@styles/mixins";
 
 export function useAboutClasses() {
   const theme = useTheme();
@@ -10,6 +10,10 @@ export function useAboutClasses() {
     flexDirection: "row",
     alignItems: "flex-start",
     gap: 16,
+    ...mobileStyles({
+      flexDirection: "column",
+      alignItems: "center",
+    }),
   });
 
   const headshot = css({
@@ -26,6 +30,9 @@ export function useAboutClasses() {
     outlineStyle: "solid",
     outlineWidth: 6,
     ...marginMixin({ top: 10, right: 10 }),
+    ...mobileStyles({
+      ...marginMixin({ bottom: 10 }),
+    }),
   });
 
   return { root, headshot };

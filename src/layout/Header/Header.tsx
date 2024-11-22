@@ -24,7 +24,7 @@ export function Header() {
         </div>
       </Link>
       <div className={classes.headerRight}>
-        <Social />
+        <Social className={classes.social} />
         <Button className={classes.contactButton} asLink={{ to: "/contact" }}>
           Let's Build Something Together
         </Button>
