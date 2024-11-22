@@ -1,18 +1,22 @@
 [
   {
     "to": "/about",
-    "label": "Forging My Path"
+    "label": "Forging My Path",
+    "summary": "Get to know the story behind my journey, expertise, and passion for web development."
   },
   {
     "to": "/skills",
-    "label": "Magic I Wield"
+    "label": "Magic I Wield",
+    "summary": "Discover the technologies and tools I use to craft innovative, user-focused web solutions."
   },
   {
     "to": "/certifications",
-    "label": "Quest for Knowledge"
+    "label": "Quest for Knowledge",
+    "summary": "Explore the credentials that showcase my dedication to learning and professional growth."
   },
   {
     "to": "/projects",
-    "label": "Projects"
+    "label": "Projects",
+    "summary": "Take a closer look at the work I've done and the impact it’s made."
   }
 ]

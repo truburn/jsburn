@@ -5,6 +5,7 @@ import navList from "./nav.json";
 export interface NavItem {
   to: string;
   label: string;
+  summary: string;
 }
 
 /**

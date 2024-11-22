@@ -1,14 +1,21 @@
 import { css } from "@emotion/css";
 import { paddingMixin } from "@styles/mixins";
+import { useLocation } from "react-router-dom";
 
 export function useAppClasses() {
+  const location = useLocation();
+
   const content = css({
-    maxWidth: 1024,
     flex: 1,
     display: "flex",
-    flexDirection: "column",
-    alignContent: "stretch",
-    alignSelf: "center",
+    flexDirection: location.pathname === "/" ? "row" : "column",
+    alignItems: "center",
+    ...(location.pathname !== "/" && {
+      alignSelf: "center",
+      alignItems: "stretch",
+      maxWidth: 1024,
+      justifyContent: "center",
+    }),
     ...paddingMixin(16),
   });
 
