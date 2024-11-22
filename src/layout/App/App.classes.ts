@@ -14,7 +14,7 @@ export function useAppClasses() {
       alignSelf: "center",
       alignItems: "stretch",
       maxWidth: 1024,
-      justifyContent: "center",
+      justifyContent: "flex-start",
     }),
     ...paddingMixin(16),
   });
