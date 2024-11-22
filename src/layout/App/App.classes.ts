@@ -1,5 +1,5 @@
 import { css } from "@emotion/css";
-import { paddingMixin } from "@styles/mixins";
+import { mobileStyles, paddingMixin } from "@styles/mixins";
 import { useLocation } from "react-router-dom";
 
 export function useAppClasses() {
@@ -17,6 +17,9 @@ export function useAppClasses() {
       justifyContent: "flex-start",
     }),
     ...paddingMixin(16),
+    ...mobileStyles({
+      flexDirection: "column",
+    }),
   });
 
   return { content };

@@ -1,17 +1,17 @@
 [
   {
     "to": "/about",
-    "label": "Forging My Path",
+    "label": "About",
     "summary": "Get to know the story behind my journey, expertise, and passion for web development."
   },
   {
     "to": "/skills",
-    "label": "Magic I Wield",
+    "label": "Skills",
     "summary": "Discover the technologies and tools I use to craft innovative, user-focused web solutions."
   },
   {
     "to": "/certifications",
-    "label": "Quest for Knowledge",
+    "label": "Certifications",
     "summary": "Explore the credentials that showcase my dedication to learning and professional growth."
   }
 ]

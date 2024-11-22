@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useSkillsClasses() {
   const theme = useTheme();
@@ -12,6 +12,9 @@ export function useSkillsClasses() {
     alignItems: "stretch",
     justifyContent: "space-evenly",
     gap: 8,
+    ...mobileStyles({
+      flexDirection: "column",
+    }),
   });
 
   const card = css({
@@ -19,6 +22,9 @@ export function useSkillsClasses() {
     ...marginMixin({ vertical: 8 }),
     maxWidth: "unset",
     width: "40%",
+    ...mobileStyles({
+      width: "auto",
+    }),
   });
 
   const cardTitle = css({

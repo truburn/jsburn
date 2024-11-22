@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useContactClasses() {
   const theme = useTheme();
@@ -11,6 +11,9 @@ export function useContactClasses() {
     display: "flex",
     flexDirection: "column",
     alignItems: "stretch",
+    ...mobileStyles({
+      minWidth: "unset",
+    }),
   });
 
   const emailStatus = css({

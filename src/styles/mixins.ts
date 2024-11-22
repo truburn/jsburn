@@ -94,3 +94,9 @@ function boxSides(params: BoxSides) {
     right: params.right ?? params.horizontal ?? 0,
   };
 }
+
+export function mobileStyles(styles: CSSObject): CSSObject {
+  return {
+    "@media (max-width: 480px)": styles,
+  };
+}

@@ -1,5 +1,10 @@
+import { cx } from "@emotion/css";
 import { Link } from "@navigation/Link";
 import { useSocialClasses } from "@navigation/Social";
+
+interface SocialProps {
+  className?: string;
+}
 
 /**
  * Keep links to social media in one place that can be referrenced in multiple places and updated in a single location when necessary
@@ -13,11 +18,11 @@ export enum SocialLinks {
 /**
  * Social Media Links
  */
-export function Social() {
+export function Social(props: SocialProps) {
   const classes = useSocialClasses();
 
   return (
-    <div className={classes.root}>
+    <div className={cx(classes.root, props.className)}>
       <Link
         className={classes.link}
         to={SocialLinks.LINKEDIN}

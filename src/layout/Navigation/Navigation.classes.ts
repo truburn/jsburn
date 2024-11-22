@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useNavigationClasses() {
   const theme = useTheme();
@@ -13,6 +13,10 @@ export function useNavigationClasses() {
     alignContent: "center",
     justifyContent: "center",
     ...paddingMixin({ horizontal: 16 }),
+    ...mobileStyles({
+      ...paddingMixin({ horizontal: 2 }),
+      justifyContent: "space-around",
+    }),
   });
 
   const link = css({
@@ -27,6 +31,12 @@ export function useNavigationClasses() {
     "&:hover, &.active": {
       color: theme.color.bg,
     },
+    ...mobileStyles({
+      ...marginMixin({ horizontal: 8 }),
+      ...paddingMixin({ vertical: 8 }),
+      textAlign: "center",
+      fontSize: theme.font.standard.size.regular,
+    }),
   });
 
   return { root, link };

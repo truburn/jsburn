@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { marginMixin, paddingMixin } from "@styles/mixins";
+import { marginMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useCertificationsClasses() {
   const theme = useTheme();
@@ -10,6 +10,10 @@ export function useCertificationsClasses() {
     flexDirection: "row",
     alignItems: "stretch",
     justifyContent: "space-evenly",
+    ...mobileStyles({
+      flexDirection: "column",
+      alignItems: "center",
+    }),
   });
 
   const card = css({
@@ -31,6 +35,12 @@ export function useCertificationsClasses() {
         ...marginMixin({ right: "1ch" }),
       },
     },
+    ...mobileStyles({
+      maxHeight: "unset",
+      maxWidth: "unset",
+      width: 300,
+      ...marginMixin({ vertical: 16 }),
+    }),
   });
 
   const certCard = css({
@@ -49,6 +59,9 @@ export function useCertificationsClasses() {
   const edCard = css({
     maxWidth: "unset",
     width: 350,
+    ...mobileStyles({
+      alignSelf: "center",
+    }),
   });
 
   const pending = css({
