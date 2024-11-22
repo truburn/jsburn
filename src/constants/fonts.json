@@ -1,0 +1,36 @@
+{
+  "standard": {
+    "description": "The default font used throughout the application.",
+    "fontFamily": "\"Space Grotesk\",sans-serif",
+    "weight": {
+      "light": 300,
+      "normal": 400,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "header": {
+    "description": "Font family for the header.",
+    "fontFamily": "\"Orbitron\",sans-serif",
+    "sampleText": "JSburn",
+    "weight": {
+      "regular": 400,
+      "semibold": 600,
+      "bold": 700,
+      "black": 900
+    }
+  },
+  "monospace": {
+    "description": "Monospace font used in cases such as lines of code.",
+    "fontFamily": "\"JetBrains Mono\",monospace",
+    "sampleText": "<TAG>content</TAG>",
+    "weight": {
+      "thin": 100,
+      "light": 300,
+      "normal": 400,
+      "semibold": 600,
+      "bold": 700,
+      "black": 800
+    }
+  }
+}

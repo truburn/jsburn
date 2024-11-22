@@ -1,0 +1,30 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import { theme } from "./theme";
+
+<Meta title="Theme/Color Schemes" />
+
+# Theme Color Scheme
+
+All of the following colors are part of the theme within the `theme.color` property. For example, `theme.color.primary` to use the primary color. The colors are defined in the `@constants/color.json` file for each color variant.
+
+<ColorPalette>
+  <ColorItem
+    title="Base Colors"
+    subtitle="Colors for common elements"
+    colors={{
+      bg: theme.color.bg,
+      fg: theme.color.fg,
+      muted: theme.color.muted
+    }}
+  />
+  <ColorItem
+    title="Brand Colors"
+    subtitle="Colors used when something should stand out."
+    colors={{
+      primary: theme.color.primary,
+      secondary: theme.color.secondary,
+      tertiary: theme.color.tertiary,
+      accent: theme.color.accent
+    }}
+  />
+</ColorPalette>
