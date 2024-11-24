@@ -1,6 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, redirect } from "react-router-dom";
 import { App } from "@layout/App";
 import { About } from "@pages/About";
+import { CaseStudy } from "@pages/CaseStudy";
 import { Certifications } from "@pages/Certifications";
 import { Contact } from "@pages/Contact";
 import { ErrorPage } from "@pages/ErrorPage";
@@ -9,6 +10,7 @@ import { PageNotFound } from "@pages/PageNotFound";
 import { Projects } from "@pages/Projects";
 import { Skills } from "@pages/Skills";
 import { PrivacyPolicy, TermsOfUse } from "@pages/Legal";
+import caseStudies from "@pages/CaseStudy/studies";
 
 export default createBrowserRouter([
   {
@@ -34,7 +36,25 @@ export default createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <Projects />
+        children: [
+          {
+            index: true,
+            element: <Projects />
+          },
+          {
+            path: ":title?",
+            element: <CaseStudy />,
+            loader: async ({ params }) => {
+              if (params.title && caseStudies) {
+                const data = caseStudies[params.title];
+                if (data) {
+                  return data;
+                }
+              }
+              redirect("/projects");
+            }
+          }
+        ]
       },
       {
         path: "/skills",
