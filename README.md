@@ -1,6 +1,6 @@
 # JSburn
 
-**v 1.0.0** _Last updated 11/23/2024_
+**v 1.1.0** _Last updated 11/23/2024_
 
 This portfolio is a personal project designed to showcase my skills, projects, and professional journey as a frontend developer. My goal was to create a platform that not only highlights my technical expertise but also reflects my creativity and personality.
 
@@ -9,7 +9,6 @@ I aimed to achieve the following with this site:
 - Engage visitors with a visually appealing, intuitive, and responsive design.
 - Demonstrate technical proficiency by using modern tools and techniques like React, Emotion, and GitHub Actions.
 - Tell my story as a developer in a way that is both professional and personal.
-- Provide a dynamic experience, including interactive elements and an AI-powered guide to make exploring my portfolio enjoyable and memorable. _Coming Soon!_
 
 This portfolio is a living project, and I am continuously iterating to enhance its features, usability, and design. I invite you to browse the codebase to see how it all comes together — feedback is always welcome!
 
