@@ -18,8 +18,8 @@ export function PrivacyPolicy() {
         explains how I collect, use, and protect your information when you visit
         my website, jsburn.com.
       </p>
-      <ol className={classes.list}>
-        <li className={classes.listItem}>
+      <ol>
+        <li>
           <SectionTitle
             className={classes.title}
             depth="3"
@@ -39,7 +39,7 @@ export function PrivacyPolicy() {
             analytics tools to track website usage and improve functionality.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             depth="3"
@@ -52,7 +52,7 @@ export function PrivacyPolicy() {
             purposes without your consent.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             depth="3"
@@ -63,7 +63,7 @@ export function PrivacyPolicy() {
             method of online transmission or storage is 100% secure.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             depth="3"
@@ -74,7 +74,7 @@ export function PrivacyPolicy() {
             of your data. <Link to="/contact">Contact me</Link> for assistance.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             depth="3"
