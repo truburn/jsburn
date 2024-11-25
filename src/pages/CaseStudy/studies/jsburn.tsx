@@ -4,8 +4,10 @@ import { SectionTitle } from "@typography/SectionTitle";
 
 export default {
   key: "jsburn",
-  title: "Crafting My Digital Portfolio - jsburn.com",
-  summary: "",
+  title: "Crafting My Digital Portfolio",
+  subtitle: "jsburn.com",
+  summary:
+    "Explore the design journey and development process behind JSBurn.com—a React-based portfolio showcasing creativity and technical expertise. Click to see how it all came together!",
   image: LogoImage,
   body: (
     <>
@@ -151,18 +153,21 @@ export default {
       <SectionTitle title="Technology Stack" />
       <ul>
         <li>
-          <strong>Frontend:</strong> React, Emotion (for styling), Storybook
-          (for component documentation)
+          <strong>Frontend:</strong> React with Typescript, Emotion (for
+          styling), Storybook (for component documentation)
         </li>
         <li>
           <strong>Deployment:</strong> AWS Amplify (for hosting and CI/CD)
         </li>
         <li>
-          <strong>Testing:</strong> Jest, React Testing Library, GitHub Actions
-          (for unit tests and automated deployment)
+          <strong>Testing:</strong> Vitest, React Testing Library, GitHub
+          Actions (for unit tests and automated deployment)
         </li>
         <li>
           <strong>Logo Design:</strong> Created using Adobe Illustrator
+        </li>
+        <li>
+          <strong>Build Tooling:</strong> Vite for fast and optimized builds
         </li>
       </ul>
     </>

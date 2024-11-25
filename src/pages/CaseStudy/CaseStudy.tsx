@@ -11,6 +11,7 @@ interface CaseStudyLink {
 export interface CaseStudyItem {
   key: string;
   title: string;
+  subtitle?: string;
   body: ReactElement;
   summary: string;
   image: string;
@@ -29,7 +30,7 @@ export function CaseStudy() {
       <Link className={classes.goBack} to="/projects">
         <i className="fa-solid fa-chevron-left"></i> Return to Projects
       </Link>
-      <PageTitle title={data.title ?? "Case Study"} />
+      <PageTitle title={data.title ?? "Case Study"} subtitle={data.subtitle} />
       {data.links?.length && (
         <ul className={classes.links}>
           {data.links.map((link, idx) => (
