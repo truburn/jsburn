@@ -21,7 +21,9 @@ export function Projects() {
           key={page.key}
           to={`/projects/${page.key}`}
         >
-          <div className={classes.image}>Image</div>
+          <div className={classes.image}>
+            <img src={page.image} alt={page.title} />
+          </div>
           <div className={classes.info}>
             <SectionTitle className={classes.title} title={page.title} />
             <p className={classes.summary}>{page.summary}</p>

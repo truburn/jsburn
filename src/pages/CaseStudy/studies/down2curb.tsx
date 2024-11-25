@@ -4,7 +4,7 @@ export default {
   key: "down2curb",
   title: "Double T's Curb Appeal",
   summary: "",
-  image: <img src="" />,
+  image: "",
   body: (
     <>
       <p>This is the content for this page</p>

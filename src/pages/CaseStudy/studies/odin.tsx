@@ -4,7 +4,7 @@ export default {
   key: "odin",
   title: "ODIN & Force Structures",
   summary: "",
-  image: <img src="" />,
+  image: "",
   body: (
     <>
       <p>This is the content for this page</p>

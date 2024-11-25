@@ -1,14 +1,20 @@
+import { Link } from "@navigation/Link";
 import { useCaseStudyClasses } from "@pages/CaseStudy";
 import { PageTitle } from "@typography/PageTitle";
 import { ReactElement } from "react";
 import { useLoaderData } from "react-router-dom";
 
+interface CaseStudyLink {
+  to: string;
+  label: string;
+}
 export interface CaseStudyItem {
   key: string;
   title: string;
   body: ReactElement;
   summary: string;
-  image: ReactElement;
+  image: string;
+  links?: CaseStudyLink[];
 }
 
 /**
@@ -20,8 +26,22 @@ export function CaseStudy() {
 
   return (
     <>
+      <Link className={classes.goBack} to="/projects">
+        <i className="fa-solid fa-chevron-left"></i> Return to Projects
+      </Link>
       <PageTitle title={data.title ?? "Case Study"} />
-      <div className={classes.root}>{data.body}</div>
+      {data.links?.length && (
+        <ul className={classes.links}>
+          {data.links.map((link, idx) => (
+            <li key={idx}>
+              <Link to={link.to} newTab>
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+      {data.body}
     </>
   );
 }
