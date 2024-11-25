@@ -11,7 +11,7 @@ export function useFooterClasses() {
     fontSize: theme.font.standard.size.medium,
     display: "flex",
     flexDirection: "row",
-    alignItems: "flex-end",
+    alignItems: "flex-start",
     justifyContent: "space-between",
     gap: 16,
     ...paddingMixin(16),

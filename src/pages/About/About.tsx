@@ -52,7 +52,12 @@ export function About() {
           <p>
             I'm always excited to collaborate on new projects and tackle
             creative challenges. <Link to="/contact">Reach out</Link>, and let's
-            see what magic we can create!
+            see what magic we can create! For a summarized version of my
+            expertise and experience, feel free to{" "}
+            <Link to="/JenniferSeburn_Resume.pdf" newTab>
+              download my resume
+            </Link>
+            .
           </p>
           <p>
             Want to dive deeper into my world? Discover more on{" "}

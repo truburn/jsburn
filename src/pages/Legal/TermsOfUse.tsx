@@ -17,8 +17,8 @@ export function TermsOfUse() {
         Welcome to jsburn.com. By accessing or using this website, you agree to
         the following terms and conditions.
       </p>
-      <ol className={classes.list}>
-        <li className={classes.listItem}>
+      <ol>
+        <li>
           <SectionTitle
             className={classes.title}
             title="Use of Content"
@@ -31,7 +31,7 @@ export function TermsOfUse() {
             prohibited.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             title="Disclaimer"
@@ -43,7 +43,7 @@ export function TermsOfUse() {
             using this website.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             title="Contact Form Usage"
@@ -58,7 +58,7 @@ export function TermsOfUse() {
             inquiries.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             title="Resume Downloads"
@@ -69,7 +69,7 @@ export function TermsOfUse() {
             not be used for other purposes without explicit permission.
           </p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             title="Governing Law"
@@ -77,7 +77,7 @@ export function TermsOfUse() {
           />
           <p>These terms are governed by the laws of Maryland, USA.</p>
         </li>
-        <li className={classes.listItem}>
+        <li>
           <SectionTitle
             className={classes.title}
             title="Open-Source Code"

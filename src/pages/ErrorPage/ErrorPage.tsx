@@ -6,7 +6,6 @@ import { Navigation } from "@layout/Navigation";
 import { Link } from "@navigation/Link";
 import { useErrorPageClasses } from "@pages/ErrorPage";
 import { PageTitle } from "@typography/PageTitle";
-import { useRouteError } from "react-router-dom";
 
 /**
  * Error Page
@@ -14,17 +13,13 @@ import { useRouteError } from "react-router-dom";
 export function ErrorPage() {
   const classes = useErrorPageClasses();
   const appClasses = useAppClasses();
-  const error = useRouteError() as Error;
 
   return (
     <>
       <Header />
       <Navigation />
       <main className={appClasses.content}>
-        <PageTitle
-          title="A Glitch in the Matrix"
-          subtitle={`Error: ${error.name}`}
-        />
+        <PageTitle title="A Glitch in the Matrix" />
         <div className={classes.root}>
           <i
             className={cx(classes.icon, "fa-sharp-duotone fa-solid fa-bugs")}

@@ -24,6 +24,9 @@ export function Footer() {
             </Link>
           ))}
         </div>
+        <Link className={classes.link} to="/JenniferSeburn_Resume.pdf" newTab>
+          Download my Resume
+        </Link>
       </div>
       <div>
         <Link className={classes.link} to="/terms-of-use">

@@ -1,5 +1,5 @@
 import { Global, css, useTheme } from "@emotion/react";
-import { marginMixin } from "@styles/mixins";
+import { marginMixin, paddingMixin } from "@styles/mixins";
 
 export default function GlobalStyles() {
   const theme = useTheme();
@@ -24,6 +24,13 @@ export default function GlobalStyles() {
         },
         p: {
           ...marginMixin({ bottom: 16 })
+        },
+        "ul, ol": {
+          ...marginMixin(),
+          ...paddingMixin({ left: "2ch" })
+        },
+        li: {
+          ...marginMixin()
         }
       })}
     />
