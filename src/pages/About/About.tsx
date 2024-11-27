@@ -21,29 +21,36 @@ export function About() {
         />
         <div>
           <p>
-            Forging my path through the dynamic world of web development, I’ve
+            Forging my path through the dynamic world of web development, I've
             spent over 20 years crafting innovative digital experiences. With a
             foundation in creativity from my Multimedia & Web Development
             degree, my journey began with a passion for graphic and web design,
             where I learned to blend aesthetics with functionality.
           </p>
           <p>
-            Over the years, I’ve expanded my expertise into front-end
+            Over the years, I've expanded my expertise into front-end
             development, mastering technologies like React, Javascript,
-            Typescript, and more. Currently, I’m diving into the Salesforce
+            Typescript, and more. Currently, I'm diving into the Salesforce
             ecosystem, advancing my skills through hands-on projects and
             Trailhead modules as I work toward earning my Salesforce Platform
             Developer I certification.
           </p>
           <p>
-            My journey isn’t just about code—it’s about connection,
-            collaboration, and the spark of bringing ideas to life. As a
-            Certified ScrumMaster® and Product Owner®, I thrive in Agile
-            environments, leading teams to transform visions into reality while
-            ensuring quality and innovation every step of the way.
+            My journey isn't just about code—it's about connection,
+            collaboration, and the spark of bringing ideas to life. As a{" "}
+            <Link to="https://bcert.me/sfmokyzqu" newTab>
+              Certified Scrum Master® (CSM®)
+            </Link>
+            and{" "}
+            <Link to="https://bcert.me/seywsupzb" newTab>
+              Certified Scrum Product Owner® (CSPO®)
+            </Link>
+            , I thrive in Agile environments, leading teams to transform visions
+            into reality while ensuring quality and innovation every step of the
+            way.
           </p>
           <p>
-            When I’m not breathing life into interfaces, you might find me
+            When I'm not breathing life into interfaces, you might find me
             experimenting with new frameworks, exploring storytelling in fantasy
             worlds, or delving into a good crochet project. Join me as I
             continue to forge my path, blending creativity, leadership, and

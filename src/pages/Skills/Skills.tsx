@@ -1,9 +1,8 @@
-import { Card } from "@components/Card";
 import { useSkillsClasses } from "@pages/Skills";
-import { PageTitle } from "@typography/PageTitle";
-import { SectionTitle } from "@typography/SectionTitle";
 import skillList from "@pages/Skills/skills.json";
 import toolList from "@pages/Skills/tools.json";
+import { PageTitle } from "@typography/PageTitle";
+import { SectionTitle } from "@typography/SectionTitle";
 
 interface ListItem {
   title: string;
@@ -35,14 +34,14 @@ export function Skills() {
       </p>
       <div className={classes.cardSet}>
         {skillList.map((item: ListItem, idx) => (
-          <Card key={idx} className={classes.card}>
-            <p className={classes.cardTitle}>{item.title}</p>
-            <ul className={classes.cardList}>
+          <div key={idx} className={classes.card}>
+            <SectionTitle depth="3" title={item.title} />
+            <ul>
               {item.list.map((skill: string) => (
                 <li key={skill}>{skill}</li>
               ))}
             </ul>
-          </Card>
+          </div>
         ))}
       </div>
       <SectionTitle title="Tools & Technology" />
@@ -54,14 +53,14 @@ export function Skills() {
       </p>
       <div className={classes.cardSet}>
         {toolList.map((item: ListItem, idx) => (
-          <Card key={idx} className={classes.card}>
-            <p className={classes.cardTitle}>{item.title}</p>
-            <ul className={classes.cardList}>
+          <div key={idx} className={classes.card}>
+            <SectionTitle depth="3" title={item.title} />
+            <ul>
               {item.list.map((tool: string) => (
                 <li key={tool}>{tool}</li>
               ))}
             </ul>
-          </Card>
+          </div>
         ))}
       </div>
     </>

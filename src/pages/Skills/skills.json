@@ -1,27 +1,27 @@
 [
   {
     "title": "Frontend Development",
-    "list": ["React", "Javascript", "Typescript", "CSS", "Styled Components"]
+    "list": ["React", "Javascript", "Typescript", "CSS"]
   },
   {
     "title": "Component Design",
-    "list": ["Storybook", "reusable design systems"]
+    "list": ["Styled Components", "Storybook", "Reusable design systems"]
   },
   {
     "title": "Testing & QA",
-    "list": ["Jest", "Vitest", "debugging", "performance optimization"]
+    "list": ["Jest", "Vitest", "Debugging", "Performance optimization"]
   },
   {
     "title": "UI/UX Design",
-    "list": ["Wireframing", "prototyping", "user-first workflows"]
+    "list": ["Wireframing", "Prototyping", "User-first workflows"]
   },
   {
     "title": "Accessibility & Usability",
-    "list": ["WCAG compliance", "responsive design principles"]
+    "list": ["WCAG compliance", "Responsive design principles"]
   },
   {
     "title": "Design Tools",
-    "list": ["Adobe Creative Suite", "Figma", "design handoff best practices"]
+    "list": ["Adobe Creative Suite", "Figma", "Design handoff best practices"]
   },
   {
     "title": "Agile Methodologies",
@@ -29,14 +29,15 @@
       "Scrum",
       "Kanban",
       "Sprint Planning",
-      "Certified Scrum Master & Product Owner"
+      "Certified Scrum Master® (CSM®)",
+      "Certified Scrum Product Owner® (CSPO®)"
     ]
   },
   {
     "title": "Collaboration & Leadership",
     "list": [
       "Cross-functional team collaboration",
-      "mentoring",
+      "Mentoring",
       "Agile ceremonies"
     ]
   },
@@ -44,12 +45,12 @@
     "title": "Code Quality Assurance",
     "list": [
       "Peer code reviews",
-      "adherence to coding standards",
-      "issue resolution"
+      "Adherence to coding standards",
+      "Issue resolution"
     ]
   },
   {
     "title": "CRM and Enterprise Platforms",
-    "list": ["Currently purusing Salesforce Platform Developer I Certification"]
+    "list": ["Currently pursuing Salesforce Platform Developer I Certification"]
   }
 ]

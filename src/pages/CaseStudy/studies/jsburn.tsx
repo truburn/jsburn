@@ -1,11 +1,37 @@
 import { CaseStudyItem } from "@pages/CaseStudy/CaseStudy";
 import LogoImage from "@assets/logo/logo.svg";
 import { SectionTitle } from "@typography/SectionTitle";
+import Logo from "@assets/logo/logo.svg?react";
+import { css } from "@emotion/css";
+import { mobileStyles } from "@styles/mixins";
+
+const logoSection = css({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "stretch",
+  justifyContent: "space-between",
+  gap: 32,
+  flexWrap: "wrap",
+  ...mobileStyles({
+    flexDirection: "column"
+  })
+});
+
+const logoText = css({
+  flex: 1
+});
+
+const logo = css({
+  maxWidth: 300,
+  ...mobileStyles({
+    maxWidth: "unset"
+  })
+});
 
 export default {
   key: "jsburn",
-  title: "Crafting My Digital Portfolio",
-  subtitle: "jsburn.com",
+  subtitle: "Crafting My Digital Portfolio",
+  title: "jsburn.com",
   summary:
     "Explore the design journey and development process behind JSBurn.com—a React-based portfolio showcasing creativity and technical expertise. Click to see how it all came together!",
   image: LogoImage,
@@ -70,30 +96,37 @@ export default {
         </li>
       </ul>
       <SectionTitle title="Logo Design: Creating My Visual Identity" />
-      <p>
-        A key component of my portfolio is the logo, which I designed to reflect
-        my personal connection with both coding and my identity. The logo
-        features a dragon, symbolizing strength, creativity, and transformation.
-        The scales of the dragon are cleverly represented by code symbols ,
-        tying the dragon directly to my work as a developer.
-      </p>
-      <p>
-        The dragon itself is shaped like an "S", which stands for JavaScript and
-        my initials, Jenny Seburn. The dragon's form entwines with the letter
-        "J", reinforcing the idea that I, as a developer, and the code I work
-        with are inseparable—like a "code dragon."
-      </p>
-      <p>
-        The fire within the design is not just a visual element; it also
-        symbolizes my passion for development. The vibrant red and fire color
-        scheme emphasizes this passion and the energy I bring to my work.
-      </p>
-      <p>
-        While the design incorporates multiple elements, from the scales to the
-        fire, it maintains a balance of being professional yet full of
-        personality. The logo represents both my technical expertise and my
-        creative side, giving visitors a glimpse into who I am as a developer.
-      </p>
+      <div className={logoSection}>
+        <Logo className={logo} />
+        <div className={logoText}>
+          <p>
+            A key component of my portfolio is the logo, which I designed to
+            reflect my personal connection with both coding and my identity. The
+            logo features a dragon, symbolizing strength, creativity, and
+            transformation. The scales of the dragon are cleverly represented by
+            code symbols , tying the dragon directly to my work as a developer.
+          </p>
+          <p>
+            The dragon itself is shaped like an "S", which stands for JavaScript
+            and my initials, Jenny Seburn. The dragon's form entwines with the
+            letter "J", reinforcing the idea that I, as a developer, and the
+            code I work with are inseparable—like a "code dragon."
+          </p>
+          <p>
+            The fire within the design is not just a visual element; it also
+            symbolizes my passion for development. The vibrant red and fire
+            color scheme emphasizes this passion and the energy I bring to my
+            work.
+          </p>
+          <p>
+            While the design incorporates multiple elements, from the scales to
+            the fire, it maintains a balance of being professional yet full of
+            personality. The logo represents both my technical expertise and my
+            creative side, giving visitors a glimpse into who I am as a
+            developer.
+          </p>
+        </div>
+      </div>
       <SectionTitle title="Solution" />
       <p>
         The MVP of my portfolio is designed with simplicity in mind. It serves

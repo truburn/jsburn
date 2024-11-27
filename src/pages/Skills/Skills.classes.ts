@@ -10,17 +10,21 @@ export function useSkillsClasses() {
     flexDirection: "row",
     flexWrap: "wrap",
     alignItems: "stretch",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
     gap: 8,
+    ...paddingMixin({
+      horizontal: 32,
+      bottom: 48,
+    }),
     ...mobileStyles({
       flexDirection: "column",
+      ...paddingMixin({ bottom: 48 }),
     }),
   });
 
   const card = css({
     ...paddingMixin(),
     ...marginMixin({ vertical: 8 }),
-    maxWidth: "unset",
     width: "40%",
     ...mobileStyles({
       width: "auto",

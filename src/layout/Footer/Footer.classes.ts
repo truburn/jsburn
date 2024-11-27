@@ -22,13 +22,13 @@ export function useFooterClasses() {
       justifyContent: "center",
       gap: 8,
       ...marginMixin(),
+      "& > p": {
+        ...marginMixin(),
+      },
       "&:first-of-type": {
-        flexDirection: "row",
+        alignItems: "flex-start",
         justifyContent: "flex-start",
         gap: 4,
-        ...mobileStyles({
-          alignItems: "center",
-        }),
       },
       "&:last-of-type": {
         flexDirection: "row",

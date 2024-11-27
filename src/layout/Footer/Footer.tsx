@@ -13,7 +13,17 @@ export function Footer() {
   return (
     <footer className={classes.root}>
       <div>
-        <i className="fa-regular fa-copyright"></i> Copyright 2024 Jenny Seburn
+        <p>
+          <i className="fa-regular fa-copyright"></i> Copyright 2024 Jenny
+          Seburn
+        </p>
+        <p>
+          Version 1.1.1
+          <br />
+          <small>
+            <em>Last modified on 11/27/2024</em>
+          </small>
+        </p>
       </div>
       <div>
         <Social />

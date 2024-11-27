@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { useTheme } from "@emotion/react";
-import { borderMixin, paddingMixin } from "@styles/mixins";
+import { borderMixin, mobileStyles, paddingMixin } from "@styles/mixins";
 
 export function useProjectsClasses() {
   const theme = useTheme();
@@ -16,15 +16,16 @@ export function useProjectsClasses() {
     ...paddingMixin({ vertical: 16, horizontal: 8 }),
     ...borderMixin({
       ...theme.border,
-      width: { bottom: 1 },
+      width: { top: 1 },
       radius: 0,
     }),
-    "&:last-of-type": {
-      border: "none",
-    },
     "&:hover": {
       background: theme.color.muted,
     },
+    ...mobileStyles({
+      flexDirection: "column",
+      alignItems: "center",
+    }),
   });
 
   const image = css({

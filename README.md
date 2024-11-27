@@ -1,6 +1,6 @@
 # JSburn
 
-**v 1.1.0** _Last updated 11/25/2024_
+**v 1.1.1** _Last updated 11/27/2024_
 
 This portfolio is a personal project designed to showcase my skills, projects, and professional journey as a frontend developer. My goal was to create a platform that not only highlights my technical expertise but also reflects my creativity and personality.
 
