@@ -18,10 +18,10 @@ export function Footer() {
           Seburn
         </p>
         <p>
-          Version 1.1.2
+          Version 1.1.3
           <br />
           <small>
-            <em>Last modified on 11/28/2024</em>
+            <em>Last modified on 12/27/2024</em>
           </small>
         </p>
       </div>
