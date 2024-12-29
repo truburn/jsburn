@@ -31,10 +31,7 @@ export function About() {
           <p>
             Over the years, I've expanded my expertise into front-end
             development, mastering technologies like React, Javascript,
-            Typescript, and more. Currently, I'm diving into the Salesforce
-            ecosystem, advancing my skills through hands-on projects and
-            Trailhead modules as I work toward earning my Salesforce Platform
-            Developer I certification.
+            Typescript, and more.
           </p>
           <p>
             My journey isn't just about code—it's about connection,

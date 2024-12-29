@@ -22,9 +22,5 @@
   {
     "title": "Version Control & CI/CD",
     "list": ["Git", "GitHub", "GitLab", "Pull Requests"]
-  },
-  {
-    "title": "CRM Platforms",
-    "list": ["Salesforce (Platform Developer I Certification in progress)"]
   }
 ]

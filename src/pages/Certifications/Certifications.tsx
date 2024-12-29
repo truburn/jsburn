@@ -5,7 +5,7 @@ import { SectionTitle } from "@typography/SectionTitle";
 import aiwLogo from "@assets/aiw-logo.png";
 import csmBadge from "@assets/csm-badge.png";
 import cspoBadge from "@assets/cspo-badge.png";
-import salesforce from "@assets/Platform-Developer-I.png";
+// import salesforce from "@assets/Platform-Developer-I.png";
 import { cx } from "@emotion/css";
 import { Link } from "@navigation/Link";
 
@@ -32,10 +32,8 @@ export function Certifications() {
         My certifications represent milestones in my ongoing journey of
         professional growth. They reflect my commitment to learning and the
         specialized knowledge I've gained in areas such as Agile methodologies.
-        I'm currently working towards my Salesforce Platform Developer I
-        certification, advancing my expertise through hands-on projects and
-        Trailhead modules. Each certification empowers me to deliver
-        high-quality, innovative solutions and lead teams with confidence.
+        Each certification empowers me to deliver high-quality, innovative
+        solutions and lead teams with confidence.
       </p>
       <div className={classes.certs}>
         <Card className={cx(classes.card, classes.certCard)}>
@@ -79,7 +77,7 @@ export function Certifications() {
             </Link>
           </p>
         </Card>
-        <Card className={cx(classes.card, classes.certCard)}>
+        {/* <Card className={cx(classes.card, classes.certCard)}>
           <div className={classes.pending}>
             <img src={salesforce} alt="Platform Developer I" />
           </div>
@@ -96,7 +94,7 @@ export function Certifications() {
           <p>
             <strong>ID:</strong> TBD
           </p>
-        </Card>
+        </Card> */}
       </div>
       <SectionTitle title="Education" />
       <p>
