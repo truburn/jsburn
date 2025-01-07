@@ -23,9 +23,9 @@ export function Certifications() {
         knowledge through formal education and hands-on experience while earning
         certifications that reflect my dedication to growth. From foundational
         studies in multimedia and web development to specialized training in
-        Agile methodologies and Salesforce development, each step has sharpened
-        my skills and prepared me to tackle new challenges. Explore the
-        milestones that define my commitment to excellence.
+        Agile methodologies, each step has sharpened my skills and prepared me
+        to tackle new challenges. Explore the milestones that define my
+        commitment to excellence.
       </p>
       <SectionTitle title="Certifications" />
       <p>
@@ -77,24 +77,6 @@ export function Certifications() {
             </Link>
           </p>
         </Card>
-        {/* <Card className={cx(classes.card, classes.certCard)}>
-          <div className={classes.pending}>
-            <img src={salesforce} alt="Platform Developer I" />
-          </div>
-          <p className={classes.certTitle}>Salesforce Platform Developer I</p>
-          <p>
-            <strong>Issued By:</strong> TBD
-          </p>
-          <p>
-            <strong>Issued:</strong> Pending
-          </p>
-          <p>
-            <strong>Expires:</strong> Pending
-          </p>
-          <p>
-            <strong>ID:</strong> TBD
-          </p>
-        </Card> */}
       </div>
       <SectionTitle title="Education" />
       <p>
