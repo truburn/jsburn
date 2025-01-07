@@ -116,7 +116,10 @@ export function Certifications() {
           <strong>Subject:</strong> Multimedia & Web Design
         </p>
         <p>
-          <strong>Dates:</strong> Oct 2001 - Oct 2003
+          <strong>Status:</strong> Graduated
+        </p>
+        <p>
+          <strong>Dates:</strong> October 2001 - June 2003
         </p>
         <p>
           <strong>Location:</strong> Arlington, VA

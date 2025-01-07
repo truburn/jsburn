@@ -18,6 +18,7 @@ export function useCertificationsClasses() {
 
   const card = css({
     maxWidth: "unset",
+    maxHeight: "unset",
     display: "flex",
     flexDirection: "column",
     alignItems: "stretch",
@@ -57,9 +58,9 @@ export function useCertificationsClasses() {
   });
 
   const edCard = css({
-    maxWidth: "unset",
-    width: 350,
+    maxWidth: "50%",
     ...mobileStyles({
+      maxWidth: "unset",
       alignSelf: "center",
     }),
   });
