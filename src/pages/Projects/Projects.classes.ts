@@ -6,6 +6,7 @@ export function useProjectsClasses() {
   const theme = useTheme();
 
   const project = css({
+    width: "100%",
     display: "flex",
     flexDirection: "row",
     alignItems: "stretch",
