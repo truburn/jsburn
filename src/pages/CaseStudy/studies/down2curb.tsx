@@ -5,7 +5,7 @@ import flyer1 from "@assets/DoubleT_Flyer_1.png";
 import flyer2 from "@assets/DoubleT_Flyer_2.png";
 import { css } from "@emotion/css";
 import { paddingMixin } from "@styles/mixins";
-import { Link } from "@navigation/Link";
+import { Link } from "react-router-dom";
 
 const flyers = css({
   display: "flex",
@@ -48,10 +48,10 @@ export default {
         supporting consultants during sales discussions.
       </p>
       <div className={flyers}>
-        <Link to="/DoubleT_Flyer_1.pdf" newTab>
+        <Link reloadDocument to="/DoubleT_Flyer_1.pdf" target="_blank">
           <img className={flyer} src={flyer1} alt="Click to view the flyer" />
         </Link>
-        <Link to="/DoubleT_Flyer_2.pdf" newTab>
+        <Link reloadDocument to="/DoubleT_Flyer_2.pdf" target="_blank">
           <img className={flyer} src={flyer2} alt="Click to view the flyer" />
         </Link>
       </div>

@@ -1,27 +1,30 @@
 import { useFooterClasses } from "@layout/Footer";
 import { NavItem } from "@layout/Navigation";
 import navList from "@layout/Navigation/nav.json";
-import { Link } from "@navigation/Link";
+import { Link, useLinkClasses } from "@navigation/Link";
+import { Link as RouteLink } from "react-router-dom";
 import { Social } from "@navigation/Social";
+import { cx } from "@emotion/css";
 
 /**
  * Footer
  */
 export function Footer() {
   const classes = useFooterClasses();
+  const linkClasses = useLinkClasses();
 
   return (
     <footer className={classes.root}>
       <div>
         <p>
-          <i className="fa-regular fa-copyright"></i> Copyright 2024 Jenny
+          <i className="fa-regular fa-copyright"></i> Copyright 2024-2025 Jenny
           Seburn
         </p>
         <p>
-          Version 1.1.4
+          Version 1.1.5
           <br />
           <small>
-            <em>Last modified on 12/29/2024</em>
+            <em>Last modified on 2/19/2025</em>
           </small>
         </p>
       </div>
@@ -34,9 +37,14 @@ export function Footer() {
             </Link>
           ))}
         </div>
-        <Link className={classes.link} to="/JenniferSeburn_Resume.pdf" newTab>
+        <RouteLink
+          reloadDocument
+          target="_blank"
+          className={cx(linkClasses.root, classes.link)}
+          to="/JenniferSeburn_Resume.pdf"
+        >
           Download my Resume
-        </Link>
+        </RouteLink>
       </div>
       <div>
         <Link className={classes.link} to="/terms-of-use">
